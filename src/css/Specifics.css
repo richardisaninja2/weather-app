@@ -24,6 +24,12 @@
     .forecast h1{
         font-size: 1.5em;;
     }
+    .forecastInside{
+        display: flex;
+    }
+    .forecastInside p{
+        /* max-width: 40px; */
+    }
     .forecastHour{
         border-radius: 15px;
         margin-top: 10%;

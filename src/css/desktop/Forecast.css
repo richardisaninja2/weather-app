@@ -1,4 +1,5 @@
-.forecastDiv{
+@media only screen and (min-width: 500px){
+  .forecastDiv{
     border-radius: 18px;
     margin-top: 1%;
     margin-right: 5%;
@@ -156,4 +157,5 @@
 }
 .forecastSide .innerDiv{
   display: flex;
+}
 }

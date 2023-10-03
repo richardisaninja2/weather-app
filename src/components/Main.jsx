@@ -81,7 +81,7 @@ function Main(){
 
         const getRequest = async (key, lat)=> {
             
-            await axios.get("http://api.weatherapi.com/v1/forecast.json?key="+key+"&q="+lat+"&days=10&aqi=no&alerts=no").then(res => {
+            await axios.get("https://api.weatherapi.com/v1/forecast.json?key="+key+"&q="+lat+"&days=10&aqi=no&alerts=no").then(res => {
                     
                     setIsLoading(false);
                     const weatherDetails = res.data.current;
@@ -136,9 +136,10 @@ function Main(){
     if(isLoading){
         return "Loading...";
     }
-    if(!isLoading && window.innerWidth < 600){
+    if(!isLoading && window.innerWidth < 500){
           return(
             <div>
+                <Search onSubmit={getData}/>
                 <Location location={location}/>
                 <Day condition={condition}/>
                 <Temp prop={temp}/>

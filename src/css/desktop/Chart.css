@@ -1,29 +1,31 @@
-.chartCont{
-    /* background-color: #35353f; */
-    margin-top: 1%;
-    margin-bottom: 5%;
-    width: 60vw;
-    color: white;
-    margin-left: 5%;
-    margin-right: 3%;
-    border-radius: 15px;
-
-   
-}
-.chartCont span{
-    margin-left: 5%;
-    font-size: 1.5em
-}
-.chart{
-    height:30vh;
-    width:60vw;
-}
-#span{
-    margin-left: 5%;
-}
-.spanCont{
-    display: flex;
-}
-.chartCont span{
-    display: flex;
+@media only screen and (min-width: 500px){
+    .chartCont{
+        /* background-color: #35353f; */
+        margin-top: 1%;
+        margin-bottom: 5%;
+        width: 60vw;
+        color: white;
+        margin-left: 5%;
+        margin-right: 3%;
+        border-radius: 15px;
+    
+       
+    }
+    .chartCont span{
+        margin-left: 5%;
+        font-size: 1.5em
+    }
+    .chart{
+        height:30vh;
+        width:60vw;
+    }
+    #span{
+        margin-left: 5%;
+    }
+    .spanCont{
+        display: flex;
+    }
+    .chartCont span{
+        display: flex;
+    }
 }

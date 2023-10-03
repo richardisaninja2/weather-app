@@ -1,4 +1,8 @@
 @media only screen and (max-width: 500px){
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     body{
         overflow-x: hidden;
         background: #FFE142;
@@ -19,32 +23,33 @@
         margin-bottom: 10%;
     }
 }
-
-.mainDesk{
-    display: flex;
-}
-
-.beside{
-    display: flex;
-    align-items: flex-start;
-}
-body{
-    background: #1e1f24;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 20px;
-  }
-  .besideTop{
+@media only screen and (min-width: 500px){
+    .mainDesk{
+        display: flex;
+    }
+    
+    .beside{
         display: flex;
         align-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-  }
+    }
+    body{
+        background: #1e1f24;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 20px;
+      }
+      .besideTop{
+            display: flex;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+      }
+}
